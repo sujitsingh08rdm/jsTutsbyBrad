@@ -37,7 +37,7 @@ console.log(age);
 // -Only letters, numbers, underscores and dollar signs
 // -can't start with a number
 
-//Multi-word formatting
+// Multi-word formatting
 // firstName = camelCase   use this only
 // FirstName == Pascalcase   when we use certain Framework
 
@@ -74,6 +74,9 @@ const person = {
 person.name = 'Pooja';
 person.email = 'Pooja.Kunjappa@cognizant.com';
 
+person.instaName = 'Kunji@'
+person.instaUserName = '0606_pooja'
+
 console.log(person);
 
 //declare multiplae vaalues at once
@@ -82,26 +85,29 @@ let a, b, c;
 const d = 10,
   e = 20;
 */
+
 /*
-//////////////////////////
+
+///////////////////////////////////////////
+/////////////////////////////////////
 ////////////////////
 //Lecture three (datatypes)
 
 ////Primitive types
 
-//String - sequence of characters must be be quotes or backticks
+//String - sequence of characters must be in quotes or backticks
 //Number - Integers as well as floating point numbers
 //boolean - logical entity / true or false
 //null - intentional absence of any object value
 //undefined - A vaiable that has not yet been defined/assigned
 //Symbol - build-in object whose constructor returns unique symbol
-//Bigint - numbers that are greater than the actual "Number" type
+//BigInt - numbers that are greater than the actual "Number" type
 
 ////Reference types(object)
 
 // Reference types or Objects are non primitive value when assigned to a variable,
 // the variable is given a reference to that value
-// Object literals, arrays and fucntions are all reference types
+// Object literals, arrays and function are all reference types
 
 ////Static typing vs dynamic typing
 // Javascript is a dynamically typed language. this means we do not explicity define that types for our vaiables.
@@ -109,18 +115,25 @@ const d = 10,
 
 //String
 const firstName = 'John';
+
 //Number
 const age = 23;
 const temp = 98.5;
+
 //Boolean
 const hasKids = true;
+
 //Null
 const aptNumber = null;
+
 //undefined
+
 //let score;
 const score = undefined;
+
 //Symbol
 const id = Symbol('id');
+
 //BigInt
 const n = 900002301481239471n;
 
@@ -140,11 +153,13 @@ console.log(output, typeof output);
 
 */
 /*
-//////////////////////////
+
+////////////////////////////////////////////////////
+////////////////////////////////////////////
 ////////////////////
 //Lecture four (primitive vs reference types)
 
-//Primitive daatya stypes stored directly in the "stack" where it is accessed from.
+//Primitive data types stored directly in the "stack" where it is accessed from.
 //Reference types are stored in heap and acessed by ref
 
 //values are stored in stack
@@ -167,8 +182,11 @@ console.log(name, newName);
 console.log(person, newPerson);
 console.log(newPerson);
 */
+
 /*
-//////////////////////////
+
+//////////////////////////////////////////////////////
+////////////////////////////////////
 ////////////////////
 //Lecture five (type conversion)
 
@@ -176,7 +194,7 @@ console.log(newPerson);
 // let amount = 'Hello';
 // amount = parseInt(amount); // convert to number
 // amount = +amount;
-//amount = Number(amount); //number here is constructor
+//amount = Number(amount); // Number here is constructor
 
 //Change number to string
 // amount = amount.toString();
@@ -196,7 +214,9 @@ console.log('Foo' / 3);
 */
 
 /*
-//////////////////////////
+
+//////////////////////////////////////////////////////////
+////////////////////////////////////
 ////////////////////
 //Lecture six (Arithmetic operator)
 
@@ -212,7 +232,7 @@ x = 7 % 5;
 x = 'hello' + ' world';
 
 //Exponent
-x = 2 ** 3;
+x = 2 ** 3; //8
 
 //Increment
 x = 1;
@@ -224,7 +244,7 @@ x--;
 
 //Assignment operator
 x = 10;
-x += 5;
+x += 5; x = x+5
 x *= 5;
 x /= 5;
 x %= 5;
@@ -244,32 +264,35 @@ x = 10 <= 5;
 
 console.log(x);
 */
+
 /*
-//////////////////////////
+////////////////////////////////////////////////
+//////////////////////////////
 ////////////////////
-//Lecture seven (type coersion)
+//Lecture seven (type coercion)
 
 let x;
 
-x = 5 + '5'; //55 + makes them concat
+x = 5 + '5'; // 55 + makes them concat
 x = 5 + Number('5'); // 10
 x = 5 * '5'; // 25
-x = 5 + null; // null gets coersed into 0 see below example
+x = 5 + null; // null gets coerced into 0 see below example
 x = Number(null); // 0
 x = Number(true); //1
 x = Number(false); // 0
 x = 5 + true; //6
-x = 5 + false;
+x = 5 + false; // 5
 x = 5 + undefined; //NaN
 
 console.log(x, typeof x);
 */
+
 /*
-//////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////
 ////////////////////
 //Lecture eight (working  with string)
 let x;
-
 const name = 'John';
 const age = 30;
 
@@ -305,11 +328,12 @@ x = s.replace('World', 'John');
 x = s.includes('Hell');
 x = s.valueOf(); // give true primitve value
 
-x = s.split(''); //  returns arrays with excludede the delimiter
+x = s.split(''); //  returns arrays with excluded the delimiter
 
 console.log(x);
 */
 /*
+////////////////////////////////////////
 //////////////////////////
 ////////////////////
 //Lecture nine (Capitalize challenge - capitalize first letter of string)
@@ -320,6 +344,7 @@ let myNewString = `${myString.charAt(0).toUpperCase()}${myString.substring(1)}`;
 console.log(myNewString);
 */
 /*
+////////////////////////////////////////
 //////////////////////////
 ////////////////////
 //Lecture ten (working  with Numbers)
@@ -412,7 +437,7 @@ x = d.toString();
 x = d.getTime(); //get time stamp
 x = d.valueOf();
 
-x = d.getFullYear(); //givs full year
+x = d.getFullYear(); //gives full year
 x = d.getMonth(); // index start from 0
 x = d.getMonth() + 1;
 x = d.getDate(); // gives from date for month
@@ -430,6 +455,5 @@ x = Intl.DateTimeFormat('default', { month: 'long' }).format(d); // locale, mont
 x = d.toLocaleDateString('default', { month: 'short' });
 
 console.log(x);
-
 
 */
