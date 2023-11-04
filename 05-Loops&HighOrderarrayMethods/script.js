@@ -194,7 +194,7 @@ for (const color in colorArr) {
 /////////////////////
 //Lecture7 (ForEach)
 
-foeEach does not return anything, it returns undefined, and is not chainable
+foeEach does not return anything, it returns undefined, and is not chainable and forEach() method is an iterative method
 
 const socials = ['Twitter', 'LinkedIn', 'Facebook', 'Instagram'];
 
@@ -575,6 +575,7 @@ const capitalizedWords = words.map((word) => {
 });
 
 console.log(capitalizedWords);
+
 */
 ///////////////////////////////////////////////////////////////
 //////////////////////////////////////////
